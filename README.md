@@ -21,3 +21,14 @@ sudo dpkg -i --force-depends fahcontrol_7.4.4-1_all.deb
 ```
 sudo dpkg -i --force-depends fahviewer_7.4.4_amd64.deb
 ```
+
+```
+apt install python3-stdeb python3-gi python3-all python3-six debhelper dh-python gir1.2-gtk-3.0
+```
+
+```
+git clone https://github.com/cdberkstresser/fah-control.git
+cd fah-control
+echo "version = '7.7.0'" > fah/Version.py
+./FAHControl
+```
